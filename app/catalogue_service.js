@@ -23,23 +23,34 @@ const catalogue = [
 ];
 
 function countBooks() {
-  // Your code here
+  return catalogue.length;
 }
 
-function checkBook(book) {
-  // Your code here
+const checkBook = (book) => {
+  for (let i=0; i <catalogue.length; i++)
+   if (book) {return true;} 
 }
 
-function countBooksByFirstLetter(letter) {
-  // Your code here
+const countBooksByFirstLetter = (letter) =>{
+  let count = 0;
+for(i = 0; i < catalogue.length; ++i){
+    if(catalogue[i][0] === letter)
+        count++;
+} return count
 }
 
-function countBooksByKeyword(keyword) {
-  // Your code here
-}
+ const countBooksByKeyword = (phrase) =>{
+  // my code here when I figure it out
+  
+  }
+
+
+
 
 function getBooksByAuthor(author) {
-  // Your code here
+  // split each string into separate words?
+
+  //loop through each
 }
 
 module.exports = {

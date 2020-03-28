@@ -40,17 +40,25 @@ for(i = 0; i < catalogue.length; ++i){
 }
 
  const countBooksByKeyword = (phrase) =>{
-  // my code here when I figure it out
+  let count = 0;
+  for(let i =0; i < catalogue.length; i++){
+    if (catalogue[i].toLowerCase().includes(keyword.toLowerCase()))
+  count++;
   
   }
+  return count;
+}
 
 
 
 
 function getBooksByAuthor(author) {
-  // split each string into separate words?
-
-  //loop through each
+  let listByAuthor = [];
+  for (let i =0; i<catalogue.length; i++){
+    if (catalogue[i].includes(author))
+    listByAuthor.push(catalogue[i]);
+  }
+  return listByAuthor;
 }
 
 module.exports = {
